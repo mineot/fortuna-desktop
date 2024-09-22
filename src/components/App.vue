@@ -1,10 +1,5 @@
 <template>
-  <h1>💖 Hello World!</h1>
-  <div>Welcome to your Electron application.</div>
-  <div>With Vue</div>
-  <div>
-    <RouterView />
-  </div>
+  <RouterView />
 </template>
 
 <script setup>
