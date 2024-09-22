@@ -37,7 +37,3 @@ const vueApp = createApp(App);
 vueApp.use(router);
 vueApp.use(pinia);
 vueApp.mount('#app');
-
-console.log(
-  '👋 This message is being logged by "renderer.ts", included via Vite'
-);
