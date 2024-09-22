@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from "electron";
+import { createMenu } from "./core/menu";
 import path from "path";
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -27,6 +28,9 @@ const createWindow = () => {
 
   // Content Security Policy
   fixContentSecurityPolicy(mainWindow);
+
+  // Create Menu
+  createMenu();
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();

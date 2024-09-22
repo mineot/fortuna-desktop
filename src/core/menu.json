@@ -1,0 +1,16 @@
+{
+  "en": {
+    "about": "About",
+    "file": "File",
+    "help": "Help",
+    "home": "Home",
+    "quit": "Quit"
+  },
+  "pt-br": {
+    "about": "Sobre",
+    "file": "Arquivo",
+    "help": "Ajuda",
+    "home": "Home",
+    "quit": "Sair"
+  }
+}
