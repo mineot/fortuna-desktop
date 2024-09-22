@@ -1,14 +1,14 @@
 {
   "en": {
     "about": "About",
-    "file": "File",
+    "app": "Application",
     "help": "Help",
     "home": "Home",
     "quit": "Quit"
   },
   "pt-br": {
     "about": "Sobre",
-    "file": "Arquivo",
+    "app": "Aplicação",
     "help": "Ajuda",
     "home": "Home",
     "quit": "Sair"

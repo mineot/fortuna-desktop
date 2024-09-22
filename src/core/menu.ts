@@ -18,7 +18,7 @@ export function createMenu(mainWindow: BrowserWindow): void {
 
   const template: any[] = [
     {
-      label: t.file,
+      label: t.app,
       submenu: [
         {
           label: t.home,
