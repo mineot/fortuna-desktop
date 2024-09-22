@@ -13,7 +13,7 @@ function getLanguage() {
   return menu[key] as any;
 }
 
-export function createMenu(): void {
+export function createMenu(mainWindow: BrowserWindow): void {
   const t = getLanguage();
 
   const template: any[] = [
@@ -22,7 +22,7 @@ export function createMenu(): void {
       submenu: [
         {
           label: t.home,
-          click: () => console.log('Go to Home view'),
+          click: () => mainWindow.webContents.send('navigate', '/'),
         },
         {
           label: t.quit,
@@ -46,7 +46,7 @@ export function createMenu(): void {
       submenu: [
         {
           label: t.about,
-          click: () => console.log('Go to About view'),
+          click: () => mainWindow.webContents.send('navigate', '/about'),
         },
       ],
     },

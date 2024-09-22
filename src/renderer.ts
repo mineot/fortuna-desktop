@@ -28,8 +28,8 @@
 
 import './styles/app.scss';
 import { createApp } from 'vue';
-import { router } from './core/router';
 import { createPinia } from 'pinia';
+import { router } from './core/router';
 import App from './components/App.vue';
 
 const pinia = createPinia();

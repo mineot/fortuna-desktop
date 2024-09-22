@@ -14,6 +14,8 @@ const createWindow = () => {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true,
+      contextIsolation: false,
     },
   });
 
@@ -30,7 +32,7 @@ const createWindow = () => {
   fixContentSecurityPolicy(mainWindow);
 
   // Create Menu
-  createMenu();
+  createMenu(mainWindow);
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
@@ -77,4 +79,3 @@ function fixContentSecurityPolicy(mainWindow: BrowserWindow) {
 // code. You can also put them in separate files and import them here.
 
 // TODO add prisma
-// TODO add ipcrenderer to vue integration
