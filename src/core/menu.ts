@@ -1,15 +1,15 @@
-import { app, Menu } from "electron";
-import menu from "./menu.json";
+import { app, Menu } from 'electron';
+import menu from './menu.json';
 
 const langMap = {
-  ["en-us" as string]: "en",
-  ["en" as string]: "en",
-  ["pt-br" as string]: "pt-br",
-  ["pt" as string]: "pt-br",
+  ['en-us' as string]: 'en',
+  ['en' as string]: 'en',
+  ['pt-br' as string]: 'pt-br',
+  ['pt' as string]: 'pt-br',
 };
 
 function getLanguage() {
-  const key = langMap[app.getLocale().toLowerCase()] ?? "en";
+  const key = langMap[app.getLocale().toLowerCase()] ?? 'en';
   return menu[key] as any;
 }
 
@@ -22,11 +22,11 @@ export function createMenu(): void {
       submenu: [
         {
           label: t.home,
-          click: () => console.log("Go to Home view"),
+          click: () => console.log('Go to Home view'),
         },
         {
           label: t.quit,
-          role: "quit",
+          role: 'quit',
         },
       ],
     },
@@ -46,7 +46,7 @@ export function createMenu(): void {
       submenu: [
         {
           label: t.about,
-          click: () => console.log("Go to About view"),
+          click: () => console.log('Go to About view'),
         },
       ],
     },

@@ -26,17 +26,17 @@
  * ```
  */
 
-import "./styles/app.scss";
-import { createApp } from "vue";
-import { router } from "./core/router";
-import { createPinia } from "pinia";
-import App from "./components/App.vue";
+import './styles/app.scss';
+import { createApp } from 'vue';
+import { router } from './core/router';
+import { createPinia } from 'pinia';
+import App from './components/App.vue';
 
 const pinia = createPinia();
 const vueApp = createApp(App);
 vueApp.use(router);
 vueApp.use(pinia);
-vueApp.mount("#app");
+vueApp.mount('#app');
 
 console.log(
   '👋 This message is being logged by "renderer.ts", included via Vite'
