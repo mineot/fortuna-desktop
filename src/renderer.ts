@@ -28,9 +28,11 @@
 
 import "./styles/app.scss";
 import { createApp } from "vue";
-import App from "./App.vue";
+import { router } from "./core/router";
+import App from "./components/App.vue";
 
 const vueApp = createApp(App);
+vueApp.use(router);
 vueApp.mount("#app");
 
 console.log(
