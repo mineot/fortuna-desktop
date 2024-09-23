@@ -12,13 +12,16 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   background-color: $body-background-color;
   color: $body-color;
 
   div.layout {
     position: absolute;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     display: flex;
+    padding: 0 10px;
   }
 }
