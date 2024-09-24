@@ -4,6 +4,12 @@
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
+  "license": "MIT",
+  "keywords": [],
+  "author": {
+    "name": "Mineot",
+    "email": "mineot@gmail.com"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -34,12 +40,6 @@
     "typescript": "~4.5.4",
     "vite": "^5.4.7"
   },
-  "keywords": [],
-  "author": {
-    "name": "mineot",
-    "email": "mineot@gmail.com"
-  },
-  "license": "MIT",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
     "pinia": "^2.2.2",
