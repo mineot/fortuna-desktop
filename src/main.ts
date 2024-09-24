@@ -2,10 +2,11 @@ import { app, BrowserWindow } from 'electron';
 import { createMenu } from './core/menu';
 import path from 'path';
 
+// FIXME reactivate when corrected
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
-if (require('electron-squirrel-startup')) {
-  app.quit();
-}
+// if (require('electron-squirrel-startup')) {
+//   app.quit();
+// }
 
 const createWindow = () => {
   // Create the browser window.
