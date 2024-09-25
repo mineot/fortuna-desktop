@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import HomeView from '../components/views/Home.vue';
-import AboutView from '../components/views/About.vue';
+import Home from './../../components/views/Home.vue';
+import About from './../../components/views/About.vue';
 
 const routes = [
-  { path: '/', component: HomeView },
-  { path: '/about', component: AboutView },
+  { path: '/', component: Home },
+  { path: '/about', component: About },
   { path: '/:catchAll(.*)', redirect: '/' },
 ];
 

@@ -1,5 +1,5 @@
 import { app, BrowserWindow } from 'electron';
-import { createMenu } from './core/menu';
+import { createMenu } from './core/menus';
 import path from 'path';
 
 // FIXME reactivate when corrected
