@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'KodeMono', monospace, sans-serif;
+  font-size: $font-size-md;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -16,7 +17,7 @@ body {
   background-color: $body-background-color;
   color: $body-color;
 
-  div.layout {
+  #app {
     position: absolute;
     overflow: hidden;
     width: 100%;
