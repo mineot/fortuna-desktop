@@ -1,19 +1,12 @@
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
+import { Model } from './model';
 
-interface User {
-  id: string;
-  name: string;
-}
-
-interface Data {
-  users: User[];
-}
-
-const defaultData: Data = { users: [] };
+import { Data, dataKeys, defaultData, User } from './contract';
 
 export class Storage {
   private $db: Low<Data>;
+  private $userModel: Model<User>;
 
   async initDB(filePath: string): Promise<void> {
     const adapter = new JSONFile<Data>(filePath);
@@ -21,16 +14,10 @@ export class Storage {
     await this.$db.read();
     this.$db.data ||= defaultData;
     await this.$db.write();
+    this.$userModel = new Model(this.$db, dataKeys.USERS);
   }
 
-  async addUser(user: User): Promise<void> {
-    await this.$db.read();
-    this.$db.data.users.push(user);
-    await this.$db.write();
-  }
-
-  async getUsers(): Promise<User[]> {
-    await this.$db.read();
-    return this.$db.data?.users || [];
+  get user(): Model<User> {
+    return this.$userModel;
   }
 }
