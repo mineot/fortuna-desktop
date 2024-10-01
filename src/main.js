@@ -1,4 +1,5 @@
-const { app, BrowserWindow } = require('electron');
+import { createMenu } from './core/menu';
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('node:path');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -23,8 +24,19 @@ const createWindow = () => {
     mainWindow.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
   }
 
+  // Create Menu
+  createMenu(mainWindow);
+
+  // Set Locale to Global Context
+  ipcMain.handle('get-locale', () => {
+    return app.getLocale();
+  });
+
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+
+  // Set Maximixed
+  mainWindow.maximize();
 };
 
 // This method will be called when Electron has finished

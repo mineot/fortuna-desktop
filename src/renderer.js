@@ -28,9 +28,16 @@
 
 import './styles/app.scss';
 import { createApp } from 'vue';
+import { router } from './core/router';
+import { i18n } from './core/i18n';
 import App from './components/App.vue';
+import languageKeys from './core/i18n/language-keys.json';
 
 const vueApp = createApp(App);
+vueApp.use(i18n);
+vueApp.use(router);
 vueApp.mount('#app');
 
-console.log('👋 This message is being logged by "renderer.js", included via Vite');
+window.api.getLanguage().then((locale) => {
+  i18n.global.locale = languageKeys[locale.toLowerCase()];
+});
