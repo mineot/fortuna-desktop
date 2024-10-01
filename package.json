@@ -4,6 +4,12 @@
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
+  "license": "MIT",
+  "keywords": [],
+  "author": {
+    "name": "Mineot Arts",
+    "email": "mineot@gmail.com"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -21,16 +27,18 @@
     "@electron-forge/plugin-fuses": "^7.5.0",
     "@electron-forge/plugin-vite": "^7.5.0",
     "@electron/fuses": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.1.4",
     "electron": "32.1.2",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.4",
     "vite": "^5.4.8"
   },
-  "keywords": [],
-  "author": {
-    "name": "mineot",
-    "email": "mineot@gmail.com"
-  },
-  "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "electron-squirrel-startup": "^1.0.1",
+    "vue": "^3.5.10",
+    "vue-i18n": "^10.0.3",
+    "vue-router": "^4.4.5"
   }
 }

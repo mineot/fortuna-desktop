@@ -26,6 +26,11 @@
  * ```
  */
 
-import './index.css';
+import './styles/app.scss';
+import { createApp } from 'vue';
+import App from './components/App.vue';
+
+const vueApp = createApp(App);
+vueApp.mount('#app');
 
 console.log('👋 This message is being logged by "renderer.js", included via Vite');
