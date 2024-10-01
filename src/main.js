@@ -2,10 +2,11 @@ import { createMenu } from './core/menu';
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('node:path');
 
-// Handle creating/removing shortcuts on Windows when installing/uninstalling.
-if (require('electron-squirrel-startup')) {
-  app.quit();
-}
+// FIXME uncomment this when the electron-squirrel-startup is fixed
+// // Handle creating/removing shortcuts on Windows when installing/uninstalling.
+// if (require('electron-squirrel-startup')) {
+//   app.quit();
+// }
 
 const createWindow = () => {
   // Create the browser window.
