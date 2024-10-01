@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from '@component/views/Home.vue';
+import File from '@component/views/File.vue';
 import About from '@component/views/About.vue';
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', component: File },
   { path: '/about', component: About },
   { path: '/:catchAll(.*)', redirect: '/' },
 ];
