@@ -1,0 +1,23 @@
+@import './../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
+@import 'fonts';
+
+* {
+  box-sizing: border-box;
+  font-family: 'KodeMono', monospace, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+
+  #app {
+    flex: 1;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
