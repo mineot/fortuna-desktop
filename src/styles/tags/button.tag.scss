@@ -1,0 +1,20 @@
+.button-base {
+  @extend .btn;
+  @extend .btn-sm;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: $gap-small;
+}
+
+button {
+  @extend .button-base;
+  @extend .btn-secondary;
+}
+
+button[role='danger'] {
+  @extend .button-base;
+  @extend .btn-danger;
+}

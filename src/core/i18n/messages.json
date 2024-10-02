@@ -2,21 +2,15 @@
   "en": {
     "about": "About",
     "app": "Application",
-    "close": "Close",
     "file": "File",
     "help": "Help",
-    "new": "New",
-    "open": "Open",
     "quit": "Quit"
   },
   "pt": {
     "about": "Sobre",
     "app": "Aplicação",
-    "close": "Fechar",
     "file": "Arquivo",
     "help": "Ajuda",
-    "new": "Novo",
-    "open": "Abrir",
     "quit": "Sair"
   }
 }

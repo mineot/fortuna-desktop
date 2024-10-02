@@ -1,0 +1,42 @@
+.page-widget {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-medium;
+
+  > .header {
+    @extend .bg-body-tertiary;
+    @extend .py-2;
+    @extend .px-3;
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: $gap-medium;
+
+    > .title {
+      @extend .h3;
+      @extend .p-0;
+      @extend .m-0;
+      flex: 1;
+      font-weight: bold;
+    }
+
+    > .actions {
+      flex: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: $gap-medium;
+    }
+  }
+
+  > .body {
+    @extend .px-3;
+    flex: 1;
+    display: flex;
+    overflow: auto;
+  }
+}

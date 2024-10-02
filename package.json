@@ -1,7 +1,7 @@
 {
   "name": "fortuna-desktop",
-  "productName": "fortuna-desktop",
-  "version": "1.0.0",
+  "productName": "Fortuna",
+  "version": "0.0.1",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
   "license": "MIT",
